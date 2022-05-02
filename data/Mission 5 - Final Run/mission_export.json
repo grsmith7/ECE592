@@ -1,0 +1,26 @@
+{
+    "waypoints": {
+        "0": {
+            "action": "Takeoff",
+            "take_off_altitude": 50.0
+        },
+        "1": {
+            "action": "GoTo",
+            "action_coordinate": {
+                "latitude": 35.774257,
+                "longitude": -78.665316,
+                "altitude": 50.0
+            }
+        },
+        "2": {
+            "action": "TakePicture",
+            "heading": 261.6972627426386
+        },
+        "3": {
+            "action": "RTL"
+        },
+        "4": {
+            "action": "Land"
+        }
+    }
+}

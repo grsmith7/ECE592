@@ -1,0 +1,51 @@
+{
+    "waypoints": {
+        "0": {
+            "action": "Takeoff",
+            "take_off_altitude": 30.0
+        },
+        "1": {
+            "action": "GoTo",
+            "action_coordinate": {
+                "latitude": 35.774265,
+                "longitude": -78.665200,
+                "altitude": 40.0
+            }
+        },
+        "2": {
+            "action": "TakePicture",
+            "heading": 261.6972627426386
+        },
+        "3": {
+            "action": "GoTo",
+            "action_coordinate": {
+                "latitude": 35.774265,
+                "longitude": -78.665200,
+                "altitude": 45.0
+            }
+        },
+        "4": {
+            "action": "TakePicture",
+            "heading": 261.6972627426386
+        },
+        "5": {
+            "action": "GoTo",
+            "action_coordinate": {
+                "latitude": 35.774265,
+                "longitude": -78.665200,
+                "altitude": 50.0
+            }
+        },
+        "6": {
+            "action": "TakePicture",
+            "heading": 261.6972627426386
+        },
+        "7": {
+            "action": "RTL"
+
+        },
+        "8": {
+            "action": "Land"
+        }
+    }
+}

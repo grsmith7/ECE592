@@ -1,0 +1,3 @@
+Altitude = 30.073
+Lattitude = 35.7268616
+Longitude = -78.697542

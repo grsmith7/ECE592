@@ -1,0 +1,1 @@
+{"waypoints": {"0": {"action": "Takeoff", "take_off_altitude": 50.0}, "1": {"action": "GoTo", "action_coordinate": {"latitude": 35.77425667128423, "longitude": -78.6653381541507, "altitude": 50.0}}, "2": {"action": "TakePicture", "heading": 261.6972627426386}, "3": {"action": "RTL"}}}
