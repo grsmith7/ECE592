@@ -1,0 +1,15 @@
+First, ensure the companion computer is set up with a Samba server and can be accessed from the ground station as 'X://'
+Second, ensure that "X://" and src/Mission Data are empty on the Ground Station
+Find the Addresses of the following connections: COMPANIONCOMPUTER, GROUNDSTATION, AUTOPILOT
+Next, open an SSH or PuTTY connection from the Ground Station to the Companion Computer.
+In the connection, use the command "screen -SL mavproxy" to open a new screen.
+Start mavproxy: "mavproxy.py --master=AUTOPILOT --out=udp:GROUNDSTATION:14551 --out=0.0.0.0:1234"
+In the mavproxy command, replace AUTOPILOT with the serial port, GROUNDSTATION with the IP address. The 0.0.0.0:1234 is used to communicate with the payload software.
+On the Ground Station, open QGroundControl and connect to UDP port 14551.
+On the SSH connection, use 'Ctrl-A + D' to detach from the mavproxy screen.
+On the SSH connection, enter the command "screen -SL mission" to open the mission screen.
+On the SSH connection, navigate to the src directory.
+On the Ground Station Terminal, navigate to the src directory.
+On the Ground Station Terminal, enter "python ground_station/main.py". This software will now wait for mission completion.
+On the SSH connection, enter "python Payload/main.py". This software will wait for arm to take-off.
+Once the mission is complete, make a copy of the contents of "X://" and delete all files in the drive.

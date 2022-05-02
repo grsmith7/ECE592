@@ -1,0 +1,13 @@
+On Ground Station:
+Install QGroundControl
+Install Python 3.9.6
+Navigate to ./src
+Run: pip install -r requirements.txt
+
+On Payload:
+Install Raspibian 
+Install and Setup Samba Server (See Tutorial in Practical Problems)
+Install MavProxy
+Install Python 3.9.6
+Navigate to ./src
+Run: pip install -r requirements.txt
