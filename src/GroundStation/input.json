@@ -1,0 +1,26 @@
+{
+    "parking_lot_corners": {
+        "corners": [
+            {
+                "latitude": 35.774661,
+                "longitude": -78.665706
+            },
+            {
+                "latitude": 35.773773,
+                "longitude": -78.665514
+            },
+            {
+                "latitude": 35.773654,
+                "longitude": -78.666353
+            },
+            {
+                "latitude": 35.774539,
+                "longitude": -78.666542
+            }
+        ]
+    },
+    "pictureAltitude": 50.0,
+    "numberOfLanes": 3,
+    "standoffDistanceinFT": 100.0,
+    "numberOfWaypoints": 1
+}
