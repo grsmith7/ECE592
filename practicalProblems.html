@@ -10,25 +10,21 @@
 	<body>
 	<center><h1>Practical Problems</h1></center>
 		
-	<p>
-		Blue Sky 
-	<p>
-	
-	<p>
-		Dark Grey Cars 
-	<p>
-	
-	<p>
-		Heading issue
-	<p>
-	
-	<p>
-		Camera stabilization 
-	<p>
-	
-	<p>
-		Wind 
-	<p>
+
+		
+	<li>Sky: The test images we initially tested on did not have the sky in them, but the pictures we took from the drone during mission testing did.
+		We accounted for this problem by adding another mask to remove the sky from the drone images.</a></li>
+	<li>Camera stability: Since we did not use a gimbal we had concerns about the camera shaking and saving a blurry image. We adjusted for this by
+	    running each picture taken through a BRISQUE metric in python (library in the Software section) before saving it.</a></li>
+	<li>Colors & Corners: Our image processing algorithm had problems with distinguishing corners and distinguishing between darker colors.
+		To address this, we added a series of masks</a></li>
+	<li>Finding Correct Corners: We struggled to find the correct corners to use in our image processing algorithm. We solved this by polling for
+		more than the anticipated number of corners and then mathematically determining which ones were the most likely to be correct. </a></li>
+	<li>Point to Heading: The point to heading command will not rotate in the negative direction, which caused issues in initial tests where
+		the drone would spin around to reach a target heading instead of taking the shorter path. We did not end up resolving this issue but ended
+		up not needing to as we only used one waypoint during our final demo run. </a></li>
+	</ul>
+	<br/>
 	
 	
 	
